@@ -1,0 +1,15 @@
+spring:
+  cache:
+    type: redis
+  redis:
+    password: str0ng_passw0rd
+    pool:
+      max-active: 8
+      max-idle: 8
+      max-wait: -1
+      min-idle: 0
+    sentinel:
+      master: mymaster
+      nodes: redis-sentinel:26379
+server:
+  port: 8088
