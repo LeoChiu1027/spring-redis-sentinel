@@ -4,4 +4,4 @@ target/
 ## idea
 /.idea/
 
-boot-redis-sentinel.iml
+spring-redis-sentinel.iml
