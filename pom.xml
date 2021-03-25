@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.demo</groupId>
-	<artifactId>boot-redis-sentinel</artifactId>
+	<artifactId>spring-redis-sentinel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>boot-redis-sentinel</name>
+	<name>spring-redis-sentinel</name>
 	<description>Demo project for Spring Boot Redis Sentinel</description>
 
 	<properties>
