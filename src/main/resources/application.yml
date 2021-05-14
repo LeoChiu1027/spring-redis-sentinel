@@ -10,6 +10,6 @@ spring:
       min-idle: 0
     sentinel:
       master: mymaster
-      nodes: redis-sentinel:26379
+      nodes: spring-redis-sentinel_redis-sentinel_1:26379,spring-redis-sentinel_redis-sentinel_2:26379,spring-redis-sentinel_redis-sentinel_3:26379
 server:
   port: 8088

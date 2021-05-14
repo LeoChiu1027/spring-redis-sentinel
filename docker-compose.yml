@@ -13,7 +13,7 @@ services:
     networks:
       - app-tier
     ports:
-      - '6379:6379'
+      - '6379'
   redis-slave:
     image: 'bitnami/redis:latest'
     environment:
@@ -22,7 +22,7 @@ services:
       - REDIS_MASTER_PASSWORD=str0ng_passw0rd
       - REDIS_PASSWORD=str0ng_passw0rd
     ports:
-      - '6380-6381:6379'
+      - '6379'
     depends_on:
       - redis
     networks:
@@ -35,7 +35,7 @@ services:
       - redis
       - redis-slave
     ports:
-      - '26379-26381:26379'
+      - '26379'
     networks:
       - app-tier
   app:
